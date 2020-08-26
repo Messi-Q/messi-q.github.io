@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Peng Qian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'> -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="header">
+    <div class="wrap">
+
+        <div class="logo">
+            <a href="index.html">Messi-Q</a>
+        </div>
+
+        <div class="top-nav">
+            <ul>
+                <li class="active"><a href="#me" class="scroll">Me</a></li>
+                <li><a href="#Intern" class="scroll">Intern</a></li>
+                <li><a href="#Honor" class="scroll">Honor</a></li>
+                <li><a href="#publication" class="scroll">Publication</a></li>
+                <li><a href="https://blog.csdn.net/qq_34611579">Blog</a></li>
+                <li><a href="https://github.com/Messi-Q">Git</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+</div>
+
+<div class="content">
+    <div class="grid1" id="me" style="background:url(images/banner3.jpg) no-repeat 0 0; background-position: center;">
+        <a href="#"><img src="./images/messi1.jpg" title="Peng Qian"/></a>
+        <h3>Peng Qian</h3>
+        <h4>Zhejiang Gongshang University Computer Science M.S.</h4>
+        <h4>messi.qp711@gmail.com</h4>
+
+    </div>
+    <div class="grid2" id="biography">
+        <h3>Biography</h3>
+        <p>
+            I am currently a three year M.S. student at the School of Computer and Information Engineering, Zhejiang
+            Gongshang University, under the supervision <a href="http://scie.zjgsu.edu.cn/5">Prof. Xun Wang</a> and
+            <a href="https://sites.google.com/view/zhenguangliu/">Prof. Zhenguang Liu</a>. Before that, I got my BS
+            degree from Yangtze University. My research interests are deep learning, blockchain, and smart contract
+            security. Recently, I studied in the School of Computing at the National University of Singapore as a
+            visiting student, under the supervision of <a href="https://www.comp.nus.edu.sg/cs/bio/rogerz/">Prof. Roger
+            Zimmermann</a>.
+        </p>
+    </div>
+
+    <div class="grid_gray">
+        <div class="grid2" id="Intern">
+            <h3>Intern </h3>
+            <h5> Jun - Sep, 2020: Blockchain Development Engineer, Hangzhou Yunphant Network Technology Co., Ltd. </h5>
+            <h5> Sep - Dec, 2019: <a href="projects/awards/invitation.pdf">Visiting Student</a>, School of Computing,
+                National University of Singapore (NUS). </h5>
+            <h5> Jun - Sep, 2019: Blockchain Development Engineer, Hangzhou Yunphant Network Technology Co., Ltd. </h5>
+        </div>
+    </div>
+
+    <div class="grid_gray">
+        <div class="grid2" id="Honor">
+            <h3>Awards & Honors </h3>
+            <h5>* Dec, 2019: The 6th international conference on cloud computing and intelligence systems (CCIS),
+                IEEE, <a href="projects/awards/best_paper.jpg">Best Paper Runner-Up Award</a></h5>
+            <h5>* Dec, 2019: The 16th China Post-Graduate Mathematical Contest in Modeling, Chinese Ministry of
+                Education, <a href="projects/awards/NPMCM.pdf">Second Prize</a>. </h5>
+            <h5>* Sep, 2019: First Level Scholarship, Zhejiang Gongshang University.</h5>
+            <h5>* Aug, 2019: The 1th Blockchain Development Contest, VNT Chain, Second Prize. </h5>
+            <h5>* Jun, 2019: The 7th Mathematical Contest in Modeling, Zhejiang Gongshang University, <a
+                    href="projects/awards/GSMCM.pdf">Second Prize</a>. </h5>
+            <h5>* Nov, 2018: The 8th Asia and Pacific Mathematical Contest in Modeling, APMCM Organizing Committee, <a
+                    href="projects/awards/APMCM.pdf">Second Prize</a>. </h5>
+            <h5>* Sep, 2017: First Level Scholarship, Yangtze University. </h5>
+        </div>
+    </div>
+
+
+    <div class="grid3" id="publication">
+        <div class="grid3-year"><h3> Publications </h3></div>
+        <div class="grid3-header">
+            <h4>Smart Contract Vulnerability Detection Using Graph Neural Networks</h4>
+        </div>
+        <div class="grid3-content">
+            <div class="grid3-left">
+                <!-- <h3>Abstract</h3> -->
+                <p>
+                    The security problems of smart contracts have
+                    drawn extensive attention due to the enormous financial
+                    losses caused by vulnerabilities. Existing
+                    methods on smart contract vulnerability detection
+                    heavily rely on fixed expert rules, leading to low
+                    detection accuracy. In this paper, we explore using
+                    graph neural networks (GNNs) for smart contract
+                    vulnerability detection. Particularly, we construct a
+                    contract graph to represent both syntactic and semantic
+                    structures of a smart contract function. To
+                    highlight the major nodes, we design an elimination
+                    phase to normalize the graph. Then, we propose
+                    a degree-free graph convolutional neural network
+                    (DR-GCN) and a novel temporal message propagation
+                    network (TMP) to learn from the normalized
+                    graphs for vulnerability detection. Extensive experiments
+                    show that our proposed approach significantly
+                    outperforms state-of-the-art methods in detecting
+                    three different types of vulnerabilities. </p>
+                <a class="button" href="projects/papers/ijcai2020/ijcai20.pdf"> PDF </a>
+                <a class="button" href="https://github.com/Messi-Q/GNNSCVulDetector"> Code </a>
+                <a class="button" href="https://drive.google.com/file/d/1MIcft9QVK4h3SJFLtjtL3n6fNAPqTqna/view?usp=sharing"> Demo </a>
+            </div>
+            <div class="grid3-right">
+                <a href="projects/papers/ijcai2020/tmp.pdf">
+                    <img src="projects/papers/ijcai2020/tmp.jpg" title="project-name"/></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="grid3-header">
+            <h4>Digital Resource Rights Confirmation and Infringement Tracking Based on Smart Contracts</h4>
+        </div>
+        <div class="grid3-content">
+            <div class="grid3-left">
+                <!-- <h3>Abstract</h3> -->
+                <p>
+                    The protection of digital resource copyrights has drawn extensive public concern in the past decade.
+                    Traditional methods, however, fail to satisfy the requirements due to their poor timeliness,
+                    frequent infringement, and cumbersome in rights confirmation, etc. In this paper, we investigate and
+                    design a novel approach for cross-platform digital resource rights confirmation and infringement
+                    tracking based on smart contracts. We utilize smart contracts to realize rights transactions and
+                    protection. As another contribution, we propose to establish fine-grained digital resource rights,
+                    which are divided into ownership and usufruct. For tracking infringement acts, we invoke smart
+                    contracts to extract the rights transfer chain for resources. Furthermore, we reveal the source of
+                    resource leakage by embedding digital watermarks when distributing the resources. By combining
+                    resource rights transfer chain and digital watermarking, we can effectively achieve digital resource
+                    rights confirmation and infringement tracking. Extensive experiments show the effectiveness of our
+                    proposed method.
+                </p>
+                <a class="button" href="projects/papers/ccis2019/ccis2019.pdf"> PDF </a>
+                <a class="button" href="projects/papers/ccis2019/slides.pptx"> Presentation </a>
+                <a class="button" href="https://github.com/Messi-Q/Resource-CI"> Code </a>
+            </div>
+            <div class="grid3-right">
+                <a href="projects/papers/ccis2019/system.pdf">
+                    <img src="projects/papers/ccis2019/system.jpg" title="project-name"/></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="grid3-header">
+            <h4>Towards Automated Reentrancy Detection for Smart Contracts Based on Sequential Models</h4>
+        </div>
+        <div class="grid3-content">
+            <div class="grid3-left">
+                <!-- <h3>Abstract</h3> -->
+                <p>
+                    In the last decade, smart contract security issues lead to tremendous losses, which has attracted
+                    increasing public attention both in industry and in academia. Researchers have embarked on efforts
+                    with logic
+                    rules, symbolic analysis, and formal analysis to achieve encouraging results in smart contract
+                    vulnerability
+                    detection tasks. However, the existing detection tools are far from satisfactory. In this paper, we
+                    attempt
+                    to utilize the deep learning-based approach, namely bidirectional long-short term memory with
+                    attention
+                    mechanism (BLSTM-ATT), aiming to precisely detect reentrancy bugs. Furthermore, we propose contract
+                    snippet representations for smart contracts, which contributes to capturing essential semantic
+                    information
+                    and control owdependencies. Our extensive experimental studies on over 42,000 real-world smart
+                    contracts
+                    show that our proposed model and contract snippet representations signicantly outperform
+                    state-of-the-art
+                    methods. In addition, this work proves that it is practical to apply deep learning-based technology
+                    on smart
+                    contract vulnerability detection, which is able to promote future research towards this area.
+                </p>
+                <a class="button" href="projects/papers/access/access.pdf"> PDF </a>
+                <a class="button" href="https://github.com/Messi-Q/RecCheck"> Code </a>
+            </div>
+            <div class="grid3-right">
+                <a href="projects/papers/access/BLSTM_ATT.pdf">
+                    <img src="projects/papers/access/BLSTM_ATT.jpg" title="project-name"/></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>Homepage of Peng Qian</p>
+</div>
+
+</body>
+</html>
+
