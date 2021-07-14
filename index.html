@@ -43,17 +43,18 @@
     <div class="grid1" id="me" style="background:url(images/banner2.jpg) no-repeat 0 0; background-position: center;">
         <a href="#"><img src="./images/messi1.jpg" title="Peng Qian"/></a>
         <h3>Peng Qian</h3>
-        <h4>Zhejiang Gongshang University Computer Science M.S.</h4>
+        <h4>Zhejiang University Computer Science PHD candidate</h4>
         <h4>messi.qp711@gmail.com</h4>
 
     </div>
     <div class="grid2" id="biography">
         <h3>Biography</h3>
         <p>
-            I am currently a three year M.S. student at the School of Computer and Information Engineering, Zhejiang
-            Gongshang University, under the supervision <a href="http://scie.zjgsu.edu.cn/5">Prof. Xun Wang</a> and
-            <a href="https://sites.google.com/view/zhenguangliu/">Prof. Zhenguang Liu</a>. Before that, I got my BS
-            degree from Yangtze University. My research interests are deep learning, blockchain, and smart contract
+            I am currently a PhD Candidate at the School of Computer Science and Technology, Zhejiang
+            University, under the supervision of <a href="https://sites.google.com/view/zhenguangliu/">Prof. Zhenguang Liu</a>.
+            Before that, I received
+            my BSc degree in software engineering from Yangtze University, MSc degree in computer science from Zhejiang
+            Gongshang University. My research interests are deep learning, blockchain, and smart contract
             security. Recently, I studied in the School of Computing at the National University of Singapore as a
             visiting student, under the supervision of <a href="https://www.comp.nus.edu.sg/cs/bio/rogerz/">Prof. Roger
             Zimmermann</a>.
@@ -77,19 +78,84 @@
                 IEEE, <a href="projects/awards/best_paper.jpg">Best Paper Runner-Up Award</a></h5>
             <h5>* Dec, 2019: The 16th China Post-Graduate Mathematical Contest in Modeling, Chinese Ministry of
                 Education, <a href="projects/awards/NPMCM.pdf">Second Prize</a>. </h5>
-            <h5>* Sep, 2019: First Level Scholarship, Zhejiang Gongshang University.</h5>
-            <h5>* Aug, 2019: The 1th Blockchain Development Contest, VNT Chain, Second Prize. </h5>
             <h5>* Jun, 2019: The 7th Mathematical Contest in Modeling, Zhejiang Gongshang University, <a
                     href="projects/awards/GSMCM.pdf">Second Prize</a>. </h5>
             <h5>* Nov, 2018: The 8th Asia and Pacific Mathematical Contest in Modeling, APMCM Organizing Committee, <a
                     href="projects/awards/APMCM.pdf">Second Prize</a>. </h5>
-            <h5>* Sep, 2017: First Level Scholarship, Yangtze University. </h5>
         </div>
     </div>
 
 
     <div class="grid3" id="publication">
         <div class="grid3-year"><h3> Publications </h3></div>
+
+        <div class="grid3-header">
+            <h4>Smart Contract Vulnerability Detection: From Pure Neural Network to Interpretable Graph Feature and Expert Pattern Fusion</h4>
+        </div>
+        <div class="grid3-content">
+            <div class="grid3-left">
+                <!-- <h3>Abstract</h3> -->
+                <p>
+                    Smart contracts hold digital coins worth billions of dollars, their security issues have drawn
+                    extensive attention in the past years. Towards smart contract vulnerability detection, conventional
+                    methods heavily rely on fixed expert rules, leading to low accuracy and poor scalability. Recent deep
+                    learning approaches alleviate this issue but fail to encode useful expert knowledge. In this paper,
+                    we explore combining deep learning with expert patterns in an explainable fashion. Specifically, we
+                    develop automatic tools to extract expert patterns from the source code. We then cast the code into
+                    a semantic graph to extract deep graph features. Thereafter, the global graph feature and local
+                    expert patterns are fused to cooperate and approach the final prediction, while yielding their
+                    interpretable weights. Experiments are conducted on all available smart contracts with source code
+                    in two platforms, Ethereum and VNT Chain. Empirically, our system significantly outperforms
+                    state-of-the-art methods. Our code is released.
+                </p>
+                <p><font color="color: #665cbe;"> <b> <a href="">IJCAI
+                    2021</a> </b> </font></p>
+                <a class="button" href="projects/papers/ijcai2021/ijcai21.pdf"> PDF </a>
+                <a class="button" href="https://github.com/Messi-Q/AMEVulDetector"> Code </a>
+                <a class="button" href=""> Video </a>
+            </div>
+            <div class="grid3-right">
+                <a href="projects/papers/ijcai2021/network.pdf">
+                    <img src="projects/papers/ijcai2021/network.jpg" title="project-name"/></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="grid3-header">
+            <h4>Combining Graph Neural Networks with Expert Knowledge for Smart Contract Vulnerability Detection</h4>
+        </div>
+        <div class="grid3-content">
+            <div class="grid3-left">
+                <!-- <h3>Abstract</h3> -->
+                <p>
+                    Smart contract vulnerability detection draws extensive attention in recent years due to the substantial losses caused by
+                    hacker attacks. Existing efforts for contract security analysis heavily rely on rigid rules defined by experts, which are labor-intensive and
+                    non-scalable. More importantly, expert-defined rules tend to be error-prone and suffer the inherent risk of being cheated by crafty
+                    attackers. Recent researches focus on the symbolic execution and formal analysis of smart contracts for vulnerability detection, yet to
+                    achieve a precise and scalable solution. Although several methods have been proposed to detect vulnerabilities in smart contracts,
+                    there is still a lack of effort that considers combining expert-defined security patterns with deep neural networks.
+                    In this paper, we explore using graph neural networks and expert knowledge for smart contract vulnerability detection. Specifically,
+                    we cast the rich control- and data- flow semantics of the source code into a contract graph. To highlight the critical nodes in the graph,
+                    we further design a node elimination phase to normalize the graph. Then, we propose a novel temporal message propagation network
+                    to extract the graph feature from the normalized graph, and combine the graph feature with designed expert patterns to yield a final
+                    detection system. Extensive experiments are conducted on all the smart contracts that have source code in Ethereum and VNT Chain
+                    platforms. Empirical results show significant accuracy improvements over the state-of-the-art methods on three types of vulnerabilities,
+                    where the detection accuracy of our method reaches 89.15%, 89.02%, and 83.21% for reentrancy, timestamp dependence, and infinite
+                    loop vulnerabilities, respectively.
+                </p>
+                <p><font color="color: #665cbe;"> <b> <a href="">TKDE
+                    2021</a> </b> </font></p>
+                <a class="button" href="projects/papers/tkde/tkde.pdf"> PDF </a>
+                <a class="button" href="https://github.com/Messi-Q/GPSCVulDetector"> Code </a>
+            </div>
+            <div class="grid3-right">
+                <a href="projects/papers/tkde/CGE.pdf">
+                    <img src="projects/papers/tkde/CGE.jpg" title="project-name"/></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
         <div class="grid3-header">
             <h4>Smart Contract Vulnerability Detection Using Graph Neural Networks</h4>
         </div>
@@ -122,7 +188,7 @@
                 <a class="button" href="projects/papers/ijcai2020/ijcai20.pdf"> PDF </a>
                 <a class="button" href="https://github.com/Messi-Q/GNNSCVulDetector"> Code </a>
                 <a class="button"
-                   href="https://drive.google.com/file/d/1MIcft9QVK4h3SJFLtjtL3n6fNAPqTqna/view?usp=sharing"> Demo </a>
+                   href="https://drive.google.com/file/d/1MIcft9QVK4h3SJFLtjtL3n6fNAPqTqna/view?usp=sharing"> Video </a>
             </div>
             <div class="grid3-right">
                 <a href="projects/papers/ijcai2020/tmp.pdf">
